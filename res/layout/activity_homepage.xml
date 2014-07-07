@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_common_head_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_homepage"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <com.deskmate.view.RoundImageView
+                    android:id="@+id/homepge_user_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/flyish"
+                    imagecontrol:border_inside_color="#0000ff"
+                    imagecontrol:border_thickness="5dp" />
+
+                <TextView
+                    android:id="@+id/homepge_user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="flyish"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/homepge_user_majarAndClass_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="摄影学院 大四"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:layout_marginTop="10dp"
+                    android:background="#55000000"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/homepage_note_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="笔记"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        style="@style/DividerVerticalTextTheme"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#88ffffff" />
+
+                    <TextView
+                        android:id="@+id/homepage_studentCard_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="学生证"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        style="@style/DividerVerticalTextTheme"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#88ffffff" />
+
+                    <TextView
+                        android:id="@+id/homepage_action_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="活动"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 基本信息 -->
+
+            <TextView
+                style="@style/DividerHorizontalTextTheme"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout style="@style/GroupTextTheme" >
+
+                <RelativeLayout
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="基本信息" 
+                        android:textColor="@color/app_emerald_green"
+                    android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:background="@color/app_emerald_green" />
+
+                <RelativeLayout style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                      
+                        android:text="学校" />
+
+                    <TextView
+                        android:id="@+id/homepage_user_school"
+                        style="@style/HomepageItemContentTextView"
+                        android:text="武汉东湖学院" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+               <RelativeLayout style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="专业" />
+
+                    <TextView
+                        android:id="@+id/homepage_user_major"
+                        style="@style/HomepageItemContentTextView"
+                        android:text="摄影学院" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="年级" />
+
+                    <TextView
+                        android:id="@+id/homepage_class"
+                        style="@style/HomepageItemContentTextView"
+                        android:text="大三" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout style="@style/ItemTheme" >
+
+                    <TextView
+                        android:id="@+id/homepage_motto"
+                        style="@style/AppItemTitleTextView"
+                        android:text="座右铭" />
+
+                    <TextView
+                        style="@style/HomepageItemContentTextView"
+                        android:text="Stay hungry，stay foolish！" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView style="@style/DividerHorizontalTextTheme" />
+
+            <!-- 学籍信息 -->
+
+            <TextView
+                style="@style/DividerHorizontalTextTheme"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout style="@style/GroupTextTheme" >
+
+                <RelativeLayout
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="学籍信息" 
+                        android:textColor="@color/app_emerald_green"
+                    android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:background="@color/app_emerald_green" />
+
+                <RelativeLayout style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="姓名" />
+
+                    <TextView
+                        style="@style/HomepageItemContentTextView"
+                        android:text="曹英俊" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="学校" />
+
+                    <TextView
+                        android:id="@+id/homapage_school"
+                        style="@style/HomepageItemContentTextView"
+                        android:text="武汉东湖学院" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+	
+                <RelativeLayout style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="专业" />
+
+                    <TextView
+                        android:id="@+id/homepage_major"
+                        style="@style/HomepageItemContentTextView"
+                        android:text="机械设计" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView style="@style/DividerHorizontalTextTheme" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

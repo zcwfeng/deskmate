@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+    
+ 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/DividerHorizontalTextTheme"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_i_icon"
+                style="@style/GroupTextTheme"
+                android:background="@drawable/item_selector"
+                android:padding="10dp" >
+
+                <com.deskmate.view.RoundImageView
+                    android:id="@+id/i_user_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/flyish"
+                    imagecontrol:border_inside_color="#0000ff"
+                    imagecontrol:border_thickness="5dp" />
+
+                <TextView
+                    android:id="@+id/homepge_user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/i_user_icon_iv"
+                    android:text="flyish"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/homepge_user_majarAndClass_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/homepge_user_name_tv"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/i_user_icon_iv"
+                    android:text="摄影学院 大四"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    style="@style/IItemIntoImageView"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <TextView style="@style/DividerHorizontalTextTheme" />
+
+            <TextView
+                style="@style/DividerHorizontalTextTheme"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout style="@style/GroupTextTheme" >
+
+                <RelativeLayout
+                    android:id="@+id/i_volunteer_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="填报志愿" />
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/i_major_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="选择专业" />
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/i_studentCard_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="学生证" />
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView style="@style/DividerHorizontalTextTheme" />
+
+            <TextView
+                style="@style/DividerHorizontalTextTheme"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout style="@style/GroupTextTheme" >
+
+                <RelativeLayout
+                    android:id="@+id/i_favorite_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="收藏夹" />
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/i_action_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="我的活动" />
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/i_note_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="我的笔记" />
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/DividerHorizontalTextTheme"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_light"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/include_common_head_layout"/> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.deskmate.view.RoundImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flyish"
+            imagecontrol:border_inside_color="@color/app_emerald_green"
+            imagecontrol:border_thickness="5dp" />
+
+        <TextView
+            style="@style/DividerHorizontalTextTheme"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_emerald_green" />
+
+        <LinearLayout style="@style/GroupTextTheme" >
+
+            <TextView
+                android:drawableLeft="@drawable/icon_phone"
+                style="@style/ItemTheme"
+                android:background="@android:color/white"
+                android:text="请输入手机号码" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/DividerHorizontalTextTheme"
+            android:background="@color/app_emerald_green" />
+
+        <TextView
+            style="@style/DividerHorizontalTextTheme"
+            android:layout_marginTop="10dp"
+            android:background="@color/app_emerald_green" />
+
+        <LinearLayout style="@style/GroupTextTheme" >
+
+            <TextView
+                style="@style/ItemTheme"
+                android:drawableLeft="@drawable/icon_code"
+                android:background="@android:color/white"
+                android:text="请输入验证码" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/DividerHorizontalTextTheme"
+            android:background="@color/app_emerald_green" />
+
+        <Button
+            android:id="@+id/login_enter_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_login"
+            android:text="登陆"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="同桌用户协议"
+        android:textColor="@color/text_gray" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_emerald_green">#009C00</color>
+    <color name="app_title_black">#333</color>
+    <color name="app_bg">#ddd</color>
+    <color name="app_bg_light">#eee</color>
+    <color name="text_gray">#555</color>
+    <color name="item_bg_white">#eee</color>
+</resources>

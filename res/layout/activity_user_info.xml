@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+    
+       <include layout="@layout/include_common_head_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/DividerHorizontalTextTheme"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_i_icon"
+                style="@style/GroupTextTheme"
+                android:background="@drawable/item_selector"
+                android:padding="10dp" >
+
+                <com.deskmate.view.RoundImageView
+                    android:id="@+id/i_user_icon_iv"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/flyish"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp" />
+
+                <TextView
+                    android:id="@+id/homepge_user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像" />
+
+                <ImageView
+                    style="@style/IItemIntoImageView"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <TextView style="@style/DividerHorizontalTextTheme" />
+
+            <TextView
+                style="@style/DividerHorizontalTextTheme"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout style="@style/GroupTextTheme" >
+
+                <RelativeLayout
+                    android:id="@+id/i_volunteer_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="昵称" />
+                    
+                    <TextView
+                        style="@style/UsrInfoItemContentTextView"
+                        android:text="Flyish"/>
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/i_major_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="性别" />
+                    <TextView
+                        style="@style/UsrInfoItemContentTextView"
+                        android:text="男"/>
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+                <RelativeLayout
+                    android:id="@+id/i_major_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="年级" />
+                    <TextView
+                        style="@style/UsrInfoItemContentTextView"
+                        android:text="大三"/>
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/i_studentCard_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="座右铭" /><TextView
+                        style="@style/UsrInfoItemContentTextView"
+                        android:text="Stay hungry，stay foolish！" />
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView style="@style/DividerHorizontalTextTheme" />
+            
+            
+            
+            <!-- 学籍信息 -->
+
+            <TextView
+                style="@style/DividerHorizontalTextTheme"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout style="@style/GroupTextTheme" >
+
+                <RelativeLayout
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="学籍信息" 
+                        android:textColor="@color/app_emerald_green"
+                    android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:background="@color/app_emerald_green" />
+
+                <RelativeLayout
+                    android:id="@+id/i_action_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="姓名" />
+                    <TextView
+                        style="@style/UsrInfoItemContentTextView"
+                        android:text="曹英俊"/>
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/DividerHorizontalTextTheme"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/i_note_layout"
+                    style="@style/ItemTheme" >
+
+                    <TextView
+                        style="@style/AppItemTitleTextView"
+                        android:text="专业" />
+                    <TextView
+                        style="@style/UsrInfoItemContentTextView"
+                        android:text="机械设计"/>
+
+                    <ImageView style="@style/IItemIntoImageView" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/DividerHorizontalTextTheme"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
